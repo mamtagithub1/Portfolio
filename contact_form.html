@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Form</title>
+    <style>
+        body{
+    background-color: #65658F;
+    color: whitesmoke;
+    padding: 4%;
+}
+
+.container{
+    display: block;
+    margin: auto;
+    width: 30%;
+    max-width: 30%;
+    min-width: 30%;
+    height: 80%;
+    border: solid 2px #120A19;
+    background-color: rgba(84, 41, 124, .9);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+h1{
+    display: flex;
+    margin: 4% auto;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 30px ;
+}
+hr{
+    width: 60%;
+    border: 1px solid #120A19;
+}
+label{
+    display: block;
+    margin: auto;
+    padding: 1vh;
+
+}
+
+input[type="text"],input[type="email"], input[type="number"] {
+    display: block;
+    margin: 2% auto;
+    width: 85%;
+    height: 4vh;
+    max-height: 30px;
+    border-radius: 5px;
+    border: solid 2px #120A19;
+    background-color: #DBD6DF;
+}
+input[type="submit"]{
+    display:block;
+    margin: 4% auto;
+    width: 30%;
+    height: 4vh;
+    background-color: #120A19;
+    color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea{
+    display: block;
+    margin: 2% auto 0;
+    width: 85%;
+    height: 22vh;
+    max-height: 165px;
+    border-radius: 5px;
+    border: solid 2px #120A19;
+    background-color: #DBD6DF;
+    font-family: sans-serif;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <form class="container" action="https://formspree.io/f/mnqkozez"  method="POST" >
+        <h1>Contact</h1>
+        <hr>
+        <label for="name"><input type="text" id="name" placeholder="What's your name?" name="name"></label>
+        <label for="email"><input type="email" id="email" placeholder="Please enter your email" name="email"></label>
+        <label for="phone"><input type="number" id="phone" placeholder="Phone number" name="phone"></label>
+        <label for="message"><textarea name="message" id="mensaje" cols="30" rows="10" placeholder="Leave us a message."></textarea></label>
+        <input type="submit" value="Send">
+
+    </form>
+
+    <!-- OR  -->
+
+    <!-- can also one API also formsubmit.co  -->
+
+   
+</body>
+</html>
